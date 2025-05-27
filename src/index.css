@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google Fonts Import - Updated with Abril Fatface */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --font-headers: 'Abril Fatface', serif;
+  --font-body: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6, .font-headers {
+  font-family: var(--font-headers);
+}
+
+@layer utilities {
+  .font-headers { font-family: var(--font-headers); }
+  .font-body { font-family: var(--font-body); }
+}
