@@ -39,7 +39,7 @@ function App() {
         
         <div className="absolute top-12 left-1/2 -translate-x-1/2 md:top-16 z-20">
           <div className="p-6 md:p-8">
-            <img src="Crunchy.svg" alt="Crunchyology logo" className="h-[32rem] sm:h-[36rem] md:h-80 lg:h-96 xl:h-[40rem] w-auto drop-shadow-2xl" />
+            <img src="Crunchy.svg" alt="Crunchyology logo" className="h-[40rem] sm:h-[44rem] md:h-80 lg:h-96 xl:h-[40rem] w-auto drop-shadow-2xl" />
           </div>
         </div>
         
