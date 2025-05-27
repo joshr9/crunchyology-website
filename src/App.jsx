@@ -37,9 +37,9 @@ function App() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
         </div>
         
-        <div className="absolute top-8 md:top-16 left-1/2 -translate-x-1/2 z-20">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:top-16 md:translate-y-0 z-20">
           <div className="p-6 md:p-8">
-            <img src="Crunchy.svg" alt="Crunchyology logo" className="h-48 sm:h-64 md:h-80 lg:h-96 xl:h-[40rem] w-auto drop-shadow-2xl" />
+            <img src="Crunchy.svg" alt="Crunchyology logo" className="h-64 sm:h-80 md:h-80 lg:h-96 xl:h-[40rem] w-auto drop-shadow-2xl" />
           </div>
         </div>
         
