@@ -116,9 +116,9 @@ function App() {
                 </div>
               </div>
 
-              <div className="p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:animate-pulse" style={{ backgroundColor: COLORS.warmBeige }}>
+              <div className="p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 group" style={{ backgroundColor: COLORS.warmBeige }}>
                 <h4 className="text-xl font-bold mb-4 flex items-center" style={{ color: COLORS.golden }}>
-                  <span className="mr-3">✈️</span> For the travelers:
+                  <span className="mr-3 group-hover:animate-bounce">✈️</span> For the travelers:
                 </h4>
                 <p className="text-base leading-relaxed mb-3" style={{ color: COLORS.charcoal }}>
                   I hear you. Glass jars in suitcases? Not ideal. No one wants granola + glass shards at 30,000 feet.
@@ -136,6 +136,11 @@ function App() {
       {/* My Story Section - Handwritten Letter */}
       <section id="story" className="py-20 px-4" style={{ backgroundColor: COLORS.sageGreen }}>
         <div className="max-w-4xl mx-auto">
+          
+          {/* Section Header - Above the letter */}
+          <h2 className="text-5xl md:text-7xl font-bold mb-16 text-center tracking-tight leading-none" style={{ color: COLORS.golden }}>
+            My Story
+          </h2>
           
           <div className="relative">
             <div className="absolute inset-0 bg-black/5 rounded-lg transform translate-x-2 translate-y-2"></div>
@@ -159,16 +164,6 @@ function App() {
                 {/* Date */}
                 <div className="text-right text-gray-500 text-base mb-8 italic">
                   March 2025
-                </div>
-
-                {/* Header */}
-                <div className="text-center mb-12">
-                  <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ color: COLORS.golden }}>
-                    Inside, We Are All the Same
-                  </h2>
-                  <p className="text-xl italic text-gray-600">
-                    A story of granola, jars, and doing things a little differently.
-                  </p>
                 </div>
 
                 {/* Aloy's exact text - no duplicates */}
@@ -234,7 +229,7 @@ function App() {
       <section id="quotes" className="py-24 px-4" style={{ backgroundColor: COLORS.sageGreen }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-6xl font-bold mb-8 tracking-tight" style={{ color: COLORS.golden }}>
+            <h2 className="text-5xl md:text-7xl font-bold mb-16 text-center tracking-tight leading-none" style={{ color: COLORS.golden }}>
               Things People Yell Across the Booth
             </h2>
             <div className="w-24 h-px mx-auto" style={{ backgroundColor: COLORS.golden }}></div>
@@ -253,7 +248,7 @@ function App() {
       {/* Find Us */}
       <section id="find-us" className="py-20 px-4" style={{ backgroundColor: COLORS.sageGreen }}>
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-6xl md:text-7xl font-bold mb-20 text-center" style={{ color: COLORS.golden }}>Find Us</h2>
+          <h2 className="text-5xl md:text-7xl font-bold mb-16 text-center tracking-tight leading-none" style={{ color: COLORS.golden }}>Find Us</h2>
           <div className="grid lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 space-y-6">
               <div className="p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300" style={{ backgroundColor: COLORS.warmBeige }}>
@@ -305,7 +300,7 @@ function App() {
       {/* Contact Us */}
       <section id="contact" className="py-20 px-4" style={{ backgroundColor: COLORS.sageGreen }}>
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl md:text-6xl font-bold mb-12 text-center" style={{ color: COLORS.golden }}>
+          <h2 className="text-5xl md:text-7xl font-bold mb-16 text-center tracking-tight leading-none" style={{ color: COLORS.golden }}>
             Contact Us
           </h2>
           <div className="max-w-3xl mx-auto">
