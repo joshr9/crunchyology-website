@@ -39,12 +39,12 @@ function App() {
         
         <div className="absolute top-8 md:top-16 left-1/2 -translate-x-1/2 z-20">
           <div className="p-6 md:p-8">
-            <img src="Crunchy.svg" alt="Crunchyology logo" className="h-[40rem] w-auto drop-shadow-2xl" />
+            <img src="Crunchy.svg" alt="Crunchyology logo" className="h-48 sm:h-64 md:h-80 lg:h-96 xl:h-[40rem] w-auto drop-shadow-2xl" />
           </div>
         </div>
         
         <div className="absolute bottom-8 md:bottom-12 left-1/2 -translate-x-1/2 w-full max-w-7xl px-4 z-10">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
             {NAV_LINKS.map((btn) => (
               <a key={btn.href} href={btn.href}
                 className="backdrop-blur-2xl text-white font-bold p-4 md:p-6 rounded-2xl shadow-2xl transition-all duration-500 text-lg md:text-2xl lg:text-3xl transform hover:scale-105 hover:-translate-y-2 border border-white/30"
