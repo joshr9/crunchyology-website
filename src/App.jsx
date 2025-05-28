@@ -316,26 +316,26 @@ function App() {
               </p>
             </div>
             <div className="p-8 md:p-12 rounded-3xl shadow-2xl" style={{ backgroundColor: COLORS.warmBeige }}>
-              <div className="space-y-8">
+              <form action="https://formspree.io/f/xblonabq" method="POST" className="space-y-8">
                 <div>
                   <label className="block font-bold mb-3 text-xl" style={{ color: COLORS.golden }}>Name</label>
-                  <input type="text" className="w-full p-4 border-2 rounded-2xl text-lg bg-white/90" placeholder="Your name" />
+                  <input type="text" name="name" className="w-full p-4 border-2 rounded-2xl text-lg bg-white/90" placeholder="Your name" required />
                 </div>
                 <div>
                   <label className="block font-bold mb-3 text-xl" style={{ color: COLORS.golden }}>Email</label>
-                  <input type="email" className="w-full p-4 border-2 rounded-2xl text-lg bg-white/90" placeholder="your.email@example.com" />
+                  <input type="email" name="email" className="w-full p-4 border-2 rounded-2xl text-lg bg-white/90" placeholder="your.email@example.com" required />
                 </div>
                 <div>
                   <label className="block font-bold mb-3 text-xl" style={{ color: COLORS.golden }}>Message</label>
-                  <textarea rows="6" className="w-full p-4 border-2 rounded-2xl text-lg bg-white/90 resize-none" placeholder="Tell us what's on your mind..."></textarea>
+                  <textarea rows="6" name="message" className="w-full p-4 border-2 rounded-2xl text-lg bg-white/90 resize-none" placeholder="Tell us what's on your mind..." required></textarea>
                 </div>
                 <div className="text-center">
-                  <button className="text-white font-bold py-4 px-8 rounded-2xl text-2xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+                  <button type="submit" className="text-white font-bold py-4 px-8 rounded-2xl text-2xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
                     style={{ backgroundColor: COLORS.oliveButton }}>
                     Send Message
                   </button>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
