@@ -93,7 +93,7 @@ function App() {
         
         {/* Logo with animation - Centered */}
         <div className="absolute inset-x-0 top-16 sm:top-20 md:top-1/4 md:-translate-y-1/2 z-20 flex justify-center px-4" style={{ animation: 'float 6s ease-in-out infinite' }}>
-          <img src="Crunchy.svg" alt="Crunchyology logo" className="h-40 sm:h-48 md:h-64 lg:h-72 xl:h-80 w-auto drop-shadow-2xl max-w-full" />
+          <img src="Crunchy.svg" alt="Crunchyology logo" className="h-40 sm:h-48 md:h-[24rem] lg:h-[28rem] xl:h-[32rem] w-auto drop-shadow-2xl max-w-full" />
         </div>
         
         {/* Centered Navigation Buttons */}
