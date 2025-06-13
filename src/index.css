@@ -1,9 +1,10 @@
+/* Google Fonts Import - MUST be first */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+/* Tailwind directives come after @import */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Google Fonts Import - Updated with Abril Fatface */
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@300;400;500;600;700&display=swap');
 
 :root {
   --font-headers: 'Abril Fatface', serif;

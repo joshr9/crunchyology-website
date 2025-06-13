@@ -23,7 +23,7 @@ const Footer = () => {
             </h3>
             <div className="w-16 h-1 rounded-full" style={{ backgroundColor: COLORS.golden }}></div>
             <p className="text-lg leading-relaxed opacity-90">Handcrafted with love</p>
-            <p className="text-lg leading-relaxed opacity-90">Broomfield, Colorado</p>
+            <p className="text-lg leading-relaxed opacity-90">Lafayette, Colorado</p>
             <p className="text-base opacity-80 italic">Granola Elevated Since 2020</p>
           </div>
           
@@ -80,6 +80,16 @@ const Footer = () => {
         <div className="mt-16 pt-8 border-t text-center" style={{ borderColor: COLORS.golden + '40' }}>
           <p className="text-lg opacity-80">© {currentYear} Crunchyology. All rights reserved.</p>
           <p className="text-base mt-2 opacity-60">Made with 🌾 and lots of oats</p>
+          <p className="text-xs mt-6 opacity-40">
+            Creatively clustered by <a 
+              href="https://www.linkedin.com/in/joshruchwarger/" 
+              className="underline hover:no-underline hover:opacity-70 transition-opacity" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Josue Ruchwarger
+            </a>
+          </p>
         </div>
       </div>
       
