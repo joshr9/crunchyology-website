@@ -23,7 +23,7 @@ const Footer = () => {
             </h3>
             <div className="w-16 h-1 rounded-full" style={{ backgroundColor: COLORS.golden }}></div>
             <p className="text-lg leading-relaxed opacity-90">Handcrafted with love</p>
-            <p className="text-lg leading-relaxed opacity-90">Lafayette, Colorado</p>
+            <p className="text-lg leading-relaxed opacity-90">Broomfield, Colorado</p>
             <p className="text-base opacity-80 italic">Granola Elevated Since 2020</p>
           </div>
           
