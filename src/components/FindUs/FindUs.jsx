@@ -52,7 +52,7 @@ const FindUs = () => {
                 <div className="flex items-center justify-center gap-3 pt-4">
                   <Calendar className="w-6 h-6" style={{ color: COLORS.golden }} aria-hidden="true" />
                   <time className="text-2xl font-bold" style={{ color: COLORS.golden }}>
-                    Sundays 8am-1pm
+                    Sundays 9am-1pm
                   </time>
                 </div>
                 

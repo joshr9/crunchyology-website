@@ -75,7 +75,7 @@ const useSEO = ({
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": "Sunday",
-        "opens": "08:00",
+        "opens": "09:00",
         "closes": "13:00"
       }
     });
