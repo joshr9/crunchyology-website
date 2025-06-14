@@ -93,7 +93,7 @@ const FindUs = () => {
                 Find us at Booth 8
               </h4>
               <p className="text-lg mb-2" style={{ color: COLORS.charcoal }}>
-                Between the Eggs and the Pickles
+                Between the Lasagna and the Flowers
               </p>
               <p className="text-base italic" style={{ color: COLORS.golden }}>
                 Look for the granola jars!
