@@ -44,7 +44,7 @@ const Hero = () => {
       </div>
       
       {/* Enhanced Logo with better mobile sizing */}
-      <div className="absolute inset-0 flex items-center justify-center z-30 px-4 pb-56 sm:pb-32 md:pb-0">
+      <div className="absolute inset-0 flex items-center justify-center z-20 px-4 pb-56 sm:pb-32 md:pb-0">
         <div className="group relative">
           <img 
             src="Crunchy.svg" 
@@ -62,26 +62,17 @@ const Hero = () => {
             width="512"
             height="512"
           />
-          
-          {/* Subtle glow effect */}
-          <div 
-            className="absolute inset-0 rounded-full opacity-20 group-hover:opacity-30 transition-opacity duration-500 blur-3xl"
-            style={{ 
-              background: `radial-gradient(circle, ${COLORS.golden}, transparent)`,
-              transform: 'scale(1.2)'
-            }}
-          ></div>
         </div>
       </div>
       
       {/* Enhanced Navigation Buttons */}
-      <div className="absolute bottom-6 sm:bottom-8 md:bottom-16 left-1/2 -translate-x-1/2 w-full max-w-6xl px-4 z-20">
+      <div className="absolute bottom-6 sm:bottom-8 md:bottom-16 left-1/2 -translate-x-1/2 w-full max-w-6xl px-4 z-30">
         <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 md:gap-6">
           {NAV_LINKS.map((btn, index) => (
             <a 
               key={btn.href} 
               href={btn.href}
-              className="group relative overflow-hidden backdrop-blur-2xl text-white font-bold px-4 py-2 sm:px-8 sm:py-5 rounded-xl sm:rounded-2xl shadow-2xl transition-all duration-500 text-sm sm:text-lg md:text-xl flex items-center gap-2 sm:gap-3 transform hover:scale-105 hover:-translate-y-2 border-2 border-white/20 hover:border-white/40 w-auto sm:w-auto min-w-[140px] sm:min-w-[180px] md:min-w-[200px] justify-center cursor-pointer"
+              className="group relative overflow-hidden backdrop-blur-2xl text-white font-bold px-4 py-3 sm:px-8 sm:py-5 rounded-xl sm:rounded-2xl shadow-2xl transition-all duration-500 text-sm sm:text-lg md:text-xl flex items-center gap-2 sm:gap-3 transform hover:scale-105 hover:-translate-y-2 border-2 border-white/20 hover:border-white/40 w-auto sm:w-auto min-w-[140px] min-h-[44px] sm:min-w-[180px] md:min-w-[200px] justify-center cursor-pointer touch-manipulation"
               style={{ 
                 background: `linear-gradient(135deg, ${COLORS.oliveButton}DD 0%, ${COLORS.sageGreen}DD 100%)`,
                 animationDelay: `${index * 0.1}s`
