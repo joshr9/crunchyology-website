@@ -72,20 +72,20 @@ const Hero = () => {
             <a 
               key={btn.href} 
               href={btn.href}
-              className="group relative overflow-hidden backdrop-blur-2xl text-white font-bold px-4 py-3 sm:px-8 sm:py-5 rounded-xl sm:rounded-2xl shadow-2xl transition-all duration-500 text-sm sm:text-lg md:text-xl flex items-center gap-2 sm:gap-3 transform hover:scale-105 hover:-translate-y-2 border-2 border-white/20 hover:border-white/40 w-auto sm:w-auto min-w-[140px] min-h-[44px] sm:min-w-[180px] md:min-w-[200px] justify-center cursor-pointer touch-manipulation"
+              className="group relative overflow-hidden backdrop-blur-2xl text-white font-medium px-3 py-2 sm:px-8 sm:py-5 rounded-full sm:rounded-2xl shadow-lg sm:shadow-2xl transition-all duration-500 text-sm sm:text-lg md:text-xl flex items-center gap-2 sm:gap-3 transform hover:scale-105 hover:-translate-y-2 border border-white/30 hover:border-white/50 w-auto sm:w-auto min-w-[120px] min-h-[40px] sm:min-w-[180px] md:min-w-[200px] justify-center cursor-pointer touch-manipulation"
               style={{ 
-                background: `linear-gradient(135deg, ${COLORS.oliveButton}DD 0%, ${COLORS.sageGreen}DD 100%)`,
+                background: `linear-gradient(135deg, ${COLORS.oliveButton}CC 0%, ${COLORS.sageGreen}CC 100%)`,
                 animationDelay: `${index * 0.1}s`
               }}
               aria-label={btn.text}
             >
               {/* Sliding overlay effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-white/15 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
               
               <span className="text-base sm:text-2xl group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 relative z-10" aria-hidden="true">
                 {btn.icon}
               </span>
-              <span className="tracking-wide font-bold relative z-10 text-xs sm:text-lg">{btn.text}</span>
+              <span className="tracking-wide font-medium relative z-10 text-xs sm:text-lg">{btn.text}</span>
               
               {/* Enhanced glow effect */}
               <div 
