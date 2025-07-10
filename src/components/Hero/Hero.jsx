@@ -76,12 +76,12 @@ const Hero = () => {
       
       {/* Enhanced Navigation Buttons */}
       <div className="absolute bottom-6 sm:bottom-8 md:bottom-16 left-1/2 -translate-x-1/2 w-full max-w-6xl px-4 z-20">
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 md:gap-6">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 md:gap-6">
           {NAV_LINKS.map((btn, index) => (
             <a 
               key={btn.href} 
               href={btn.href}
-              className="group relative overflow-hidden backdrop-blur-2xl text-white font-bold px-6 sm:px-8 py-4 sm:py-5 rounded-2xl shadow-2xl transition-all duration-500 text-base sm:text-lg md:text-xl flex items-center gap-3 transform hover:scale-105 hover:-translate-y-2 border-2 border-white/20 hover:border-white/40 w-full sm:w-auto min-w-[200px] sm:min-w-[180px] md:min-w-[200px] justify-center cursor-pointer"
+              className="group relative overflow-hidden backdrop-blur-2xl text-white font-bold px-4 py-2 sm:px-8 sm:py-5 rounded-xl sm:rounded-2xl shadow-2xl transition-all duration-500 text-sm sm:text-lg md:text-xl flex items-center gap-2 sm:gap-3 transform hover:scale-105 hover:-translate-y-2 border-2 border-white/20 hover:border-white/40 w-full sm:w-auto min-w-[160px] sm:min-w-[180px] md:min-w-[200px] justify-center cursor-pointer"
               style={{ 
                 background: `linear-gradient(135deg, ${COLORS.oliveButton}DD 0%, ${COLORS.sageGreen}DD 100%)`,
                 animationDelay: `${index * 0.1}s`
@@ -91,10 +91,10 @@ const Hero = () => {
               {/* Sliding overlay effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
               
-              <span className="text-xl sm:text-2xl group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 relative z-10" aria-hidden="true">
+              <span className="text-base sm:text-2xl group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 relative z-10" aria-hidden="true">
                 {btn.icon}
               </span>
-              <span className="tracking-wide font-bold relative z-10">{btn.text}</span>
+              <span className="tracking-wide font-bold relative z-10 text-xs sm:text-lg">{btn.text}</span>
               
               {/* Enhanced glow effect */}
               <div 

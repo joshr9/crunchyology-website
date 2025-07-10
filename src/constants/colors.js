@@ -23,7 +23,7 @@ export const QUOTES = [
   { quote: "GRANOLA IS BACK???", author: "Excited Regular" },
   { quote: "That cinnamon one? Unreal.", author: "Weekend Warrior" },
   { quote: "I meant to give this as a gift. I didn't.", author: "Honest Customer" },
-  { quote: "Do you take empty jars as payment?", author: "Hopeful Hippie" },
+  { quote: "That spiced one, it's so good you have to chai it!", author: "Hopeful Hippie" },
   { quote: "This is basically cereal for adults!", author: "Wise Observer" },
   { quote: "I came for pickles, leaving with granola.", author: "Booth Hopper" }
 ];
