@@ -10,7 +10,7 @@ const Header = () => {
       setScrolled(window.scrollY > 100);
       
       // Update active section based on scroll position
-      const sections = ['story', 'reviews', 'find-us', 'contact'];
+      const sections = ['story', 'flavors', 'reviews', 'find-us', 'contact'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {

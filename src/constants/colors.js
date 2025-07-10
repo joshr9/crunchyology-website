@@ -12,6 +12,7 @@ export const COLORS = {
 // Navigation links used across the site
 export const NAV_LINKS = [
   { href: "#story", text: "My Story", icon: "📖" },
+  { href: "#flavors", text: "Flavors", icon: "🍯" },
   { href: "#reviews", text: "Reviews", icon: "💬" },
   { href: "#find-us", text: "Find Us", icon: "📍" },
   { href: "#contact", text: "Contact Us", icon: "✉️" }

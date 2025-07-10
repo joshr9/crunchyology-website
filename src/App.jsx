@@ -3,6 +3,7 @@ import SEO from './components/Layout/SEO';
 import Header from './components/Layout/Header';
 import Hero from './components/Hero/Hero';
 import Story from './components/Story/Story';
+import Flavors from './components/Flavors/Flavors';
 import Reviews from './components/Reviews/Reviews';
 import FindUs from './components/FindUs/FindUs';
 import Contact from './components/Contact/Contact';
@@ -17,6 +18,7 @@ function App() {
       <main>
         <Hero />
         <Story />
+        <Flavors />
         <Reviews />
         <FindUs />
         <Contact />

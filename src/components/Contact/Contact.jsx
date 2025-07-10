@@ -47,29 +47,56 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 px-4 relative overflow-hidden" style={{ backgroundColor: COLORS.sageGreen }}>
-      {/* Background decoration */}
-      <div 
-        className="absolute -bottom-32 -right-32 w-96 h-96 rounded-full opacity-10"
-        style={{ background: `radial-gradient(circle, ${COLORS.golden}, transparent)` }} 
-      />
+    <section id="contact" className="py-32 px-4 relative overflow-hidden" style={{ backgroundColor: COLORS.sageGreen }}>
+      {/* Enhanced Background Elements */}
+      <div className="absolute inset-0">
+        <div 
+          className="absolute top-20 right-10 w-96 h-96 rounded-full opacity-5 animate-[spin_20s_linear_infinite]"
+          style={{ background: `conic-gradient(from 0deg, ${COLORS.golden}, white, ${COLORS.golden})` }} 
+        />
+        <div 
+          className="absolute bottom-20 left-10 w-64 h-64 rounded-full opacity-10"
+          style={{ background: `radial-gradient(circle, white, transparent)` }} 
+        />
+      </div>
       
       <div className="max-w-7xl mx-auto relative">
-        <div className="text-center mb-20">
-          <h2 className="font-serif text-5xl md:text-7xl font-bold mb-6 text-white tracking-tight leading-none">
-            Contact Us
-          </h2>
-          <div className="w-32 h-1 mx-auto rounded-full bg-white/30"></div>
+        {/* Enhanced Header */}
+        <div className="text-center mb-24">
+          <div className="inline-block">
+            <h2 className="font-serif text-6xl md:text-8xl font-bold mb-8 tracking-tight leading-none relative text-white" 
+                style={{ 
+                  textShadow: '0 4px 8px rgba(0,0,0,0.3)'
+                }}>
+              Contact Us
+              {/* Decorative underline */}
+              <div 
+                className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-32 h-2 rounded-full"
+                style={{ 
+                  background: `linear-gradient(90deg, transparent, white, transparent)`,
+                  animation: 'pulse 2s ease-in-out infinite'
+                }}
+              ></div>
+            </h2>
+          </div>
+          <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
+            We'd love to hear from you! Drop us a line below.
+          </p>
         </div>
         
         <div className="max-w-3xl mx-auto">
-          <div className="p-10 rounded-3xl shadow-2xl mb-8 text-center" style={{ backgroundColor: COLORS.white }}>
-            <Mail className="w-16 h-16 mx-auto mb-6" style={{ color: COLORS.golden }} />
+          <div className="p-10 rounded-3xl shadow-2xl mb-8 text-center hover:shadow-3xl transition-all duration-500 transform hover:scale-[1.02]" style={{ backgroundColor: COLORS.white }}>
+            <div 
+              className="w-20 h-20 rounded-full mx-auto mb-6 flex items-center justify-center"
+              style={{ backgroundColor: COLORS.golden + '20' }}
+            >
+              <Mail className="w-10 h-10" style={{ color: COLORS.golden }} />
+            </div>
             <p className="text-xl leading-relaxed" style={{ color: COLORS.charcoal }}>
-              We'd love to hear from you! Send us a message at{' '}
+              Send us a message at{' '}
               <a 
                 href="mailto:crunchyology@gmail.com" 
-                className="font-bold hover:underline inline-flex items-center gap-2" 
+                className="font-bold hover:underline inline-flex items-center gap-2 transition-all duration-300" 
                 style={{ color: COLORS.golden }}
               >
                 crunchyology@gmail.com
@@ -78,7 +105,10 @@ const Contact = () => {
             </p>
           </div>
           
-          <div className="p-10 rounded-3xl shadow-2xl" style={{ backgroundColor: COLORS.warmBeige }}>
+          <div className="p-10 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500" 
+               style={{ 
+                 background: `linear-gradient(135deg, ${COLORS.warmBeige} 0%, #f8f5f0 100%)`
+               }}>
             <form onSubmit={handleSubmit} className="space-y-8">
               <div className="group">
                 <label 
@@ -94,7 +124,7 @@ const Contact = () => {
                   name="name" 
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full p-5 border-2 rounded-2xl text-lg bg-white/90 transition-all focus:shadow-lg outline-none"
+                  className="w-full p-5 border-2 rounded-2xl text-lg bg-white/90 transition-all duration-300 focus:shadow-lg focus:scale-[1.02] outline-none"
                   style={{ borderColor: COLORS.golden + '40' }}
                   placeholder="Your name" 
                   required 
@@ -115,7 +145,7 @@ const Contact = () => {
                   name="email" 
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full p-5 border-2 rounded-2xl text-lg bg-white/90 transition-all focus:shadow-lg outline-none"
+                  className="w-full p-5 border-2 rounded-2xl text-lg bg-white/90 transition-all duration-300 focus:shadow-lg focus:scale-[1.02] outline-none"
                   style={{ borderColor: COLORS.golden + '40' }}
                   placeholder="your.email@example.com" 
                   required 
@@ -136,7 +166,7 @@ const Contact = () => {
                   name="message" 
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full p-5 border-2 rounded-2xl text-lg bg-white/90 resize-none transition-all focus:shadow-lg outline-none"
+                  className="w-full p-5 border-2 rounded-2xl text-lg bg-white/90 resize-none transition-all duration-300 focus:shadow-lg focus:scale-[1.02] outline-none"
                   style={{ borderColor: COLORS.golden + '40' }}
                   placeholder="Tell us what's on your mind..."
                   required
@@ -145,17 +175,24 @@ const Contact = () => {
               
               <div className="text-center">
                 {submitted ? (
-                  <p className="text-xl font-bold" style={{ color: COLORS.golden }}>
-                    Thanks for your message! We'll get back to you soon. 🌾
-                  </p>
+                  <div className="p-6 rounded-2xl bg-white/80 backdrop-blur-sm">
+                    <p className="text-xl font-bold" style={{ color: COLORS.golden }}>
+                      Thanks for your message! We'll get back to you soon. 🌾
+                    </p>
+                  </div>
                 ) : (
                   <button 
                     type="submit"
                     disabled={submitting}
-                    className="text-white font-bold py-5 px-12 rounded-full text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed"
-                    style={{ backgroundColor: COLORS.oliveButton }}
+                    className="group text-white font-bold py-5 px-12 rounded-2xl text-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed relative overflow-hidden"
+                    style={{ 
+                      background: `linear-gradient(135deg, ${COLORS.oliveButton} 0%, ${COLORS.sageGreen} 100%)`
+                    }}
                   >
-                    {submitting ? 'Sending...' : 'Send Message'}
+                    <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+                    <span className="relative z-10">
+                      {submitting ? 'Sending...' : 'Send Message'}
+                    </span>
                   </button>
                 )}
               </div>
@@ -163,6 +200,14 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      
+      {/* Custom animations */}
+      <style jsx>{`
+        @keyframes pulse {
+          0%, 100% { opacity: 0.8; }
+          50% { opacity: 1; }
+        }
+      `}</style>
     </section>
   );
 };
