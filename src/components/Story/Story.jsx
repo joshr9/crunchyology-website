@@ -39,14 +39,9 @@ const Story = () => {
           </div>
           
           <div className="relative">
-            {/* Enhanced shadow layers */}
-            <div className="absolute inset-0 bg-black/8 rounded-2xl transform translate-x-4 translate-y-4"></div>
-            <div className="absolute inset-0 bg-black/5 rounded-2xl transform translate-x-2 translate-y-2"></div>
-            
             <article 
-              className="group relative rounded-2xl shadow-2xl p-12 md:p-20 transform -rotate-1 hover:rotate-0 transition-all duration-700 hover:shadow-3xl hover:scale-[1.02]"
+              className="group relative rounded-2xl shadow-xl p-12 md:p-20 transform -rotate-1 hover:rotate-0 transition-all duration-700 hover:shadow-2xl hover:scale-[1.02] bg-white"
               style={{ 
-                background: `linear-gradient(135deg, #ffffff 0%, #fefcf8 100%)`,
                 backgroundImage: `repeating-linear-gradient(transparent, transparent 32px, rgba(139, 128, 85, 0.06) 32px, rgba(139, 128, 85, 0.06) 33px)`
               }}
             >
@@ -87,16 +82,14 @@ const Story = () => {
 
                   <p className="text-xl leading-[1.8] tracking-wide">
                     I never planned on starting a business — but turns out when you 
-                    <span className="font-medium italic" style={{ color: COLORS.golden }}> bake with love</span> and hand out enough jars, 
+                    <span className="font-medium italic" style={{ color: COLORS.golden }}> bake with love</span> and hand out enough pounds of granola, 
                     people notice. Now I get to share this crispy little passion with you: 
                     <span className="font-semibold" style={{ color: COLORS.golden }}> lovingly baked, seriously tasty, and always packaged with care.</span>
                   </p>
 
                   {/* Enhanced Eco-Friendly Section */}
                   <p className="text-xl leading-[1.8] tracking-wide my-8">
-                    The demand for hiking-safe bags, gifting, and shipping in lighter packaging 
-                    <em className="not-italic font-medium">(shatter-free!)</em> grew — 
-                    so we now have <span className="font-semibold underline decoration-2 decoration-emerald-400">compostable bags</span>. 
+                    My fruitful search for the best home compostable bags is complete. We are packaging our delicious granola in <span className="font-semibold underline decoration-2 decoration-emerald-400">compostable bags</span>. 
                     Sure, they look like regular plastic. But don't be fooled — these beauties 
                     break down in your compost like banana peels 
                     <span className="italic font-medium" style={{ color: COLORS.golden }}> (or your willpower around the chai spiced granola)</span>. <span className="font-semibold" style={{ color: COLORS.golden }}>
