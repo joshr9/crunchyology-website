@@ -211,7 +211,7 @@ const Story = () => {
                         className="w-full h-32 object-cover mb-3 rounded"
                       />
                       <p className="text-sm text-center font-handwritten" style={{ color: COLORS.charcoal }}>
-                        Fresh & Raw
+                        The mountain of gold before the fruit is added
                       </p>
                     </div>
                   </div>
@@ -223,7 +223,7 @@ const Story = () => {
                         className="w-full h-32 object-cover mb-3 rounded"
                       />
                       <p className="text-sm text-center font-handwritten" style={{ color: COLORS.charcoal }}>
-                        Perfect Clusters
+                        Perfect Clusters, for the texture lovers.
                       </p>
                     </div>
                   </div>
@@ -235,7 +235,7 @@ const Story = () => {
                         className="w-full h-32 object-cover mb-3 rounded"
                       />
                       <p className="text-sm text-center font-handwritten" style={{ color: COLORS.charcoal }}>
-                        Ready to Share
+                        Ready to share, or hoard. Your choice.
                       </p>
                     </div>
                   </div>
