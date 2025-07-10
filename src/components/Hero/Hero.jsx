@@ -44,12 +44,12 @@ const Hero = () => {
       </div>
       
       {/* Enhanced Logo with better mobile sizing */}
-      <div className="absolute inset-0 flex items-center justify-center z-30 px-4 pb-40 sm:pb-32 md:pb-0">
+      <div className="absolute inset-0 flex items-center justify-center z-30 px-4 pb-48 sm:pb-32 md:pb-0">
         <div className="group relative">
           <img 
             src="Crunchy.svg" 
             alt="Crunchyology - Granola Elevated" 
-            className="h-48 sm:h-56 md:h-80 lg:h-96 xl:h-[48rem] 2xl:h-[56rem] w-auto max-w-full group-hover:scale-105 transition-all duration-500"
+            className="h-40 sm:h-56 md:h-80 lg:h-96 xl:h-[48rem] 2xl:h-[56rem] w-auto max-w-full group-hover:scale-105 transition-all duration-500"
             style={{
               filter: `
                 drop-shadow(0 0 4px rgba(0,0,0,0.8)) 
