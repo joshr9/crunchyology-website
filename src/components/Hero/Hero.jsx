@@ -44,12 +44,12 @@ const Hero = () => {
       </div>
       
       {/* Enhanced Logo with better mobile sizing */}
-      <div className="absolute inset-0 flex items-center justify-center z-30 px-4 pb-48 sm:pb-32 md:pb-0">
+      <div className="absolute inset-0 flex items-center justify-center z-30 px-4 pb-56 sm:pb-32 md:pb-0">
         <div className="group relative">
           <img 
             src="Crunchy.svg" 
             alt="Crunchyology - Granola Elevated" 
-            className="h-40 sm:h-56 md:h-80 lg:h-96 xl:h-[48rem] 2xl:h-[56rem] w-auto max-w-full group-hover:scale-105 transition-all duration-500"
+            className="h-56 sm:h-56 md:h-80 lg:h-96 xl:h-[48rem] 2xl:h-[56rem] w-auto max-w-full group-hover:scale-105 transition-all duration-500"
             style={{
               filter: `
                 drop-shadow(0 0 4px rgba(0,0,0,0.8)) 
@@ -81,7 +81,7 @@ const Hero = () => {
             <a 
               key={btn.href} 
               href={btn.href}
-              className="group relative overflow-hidden backdrop-blur-2xl text-white font-bold px-4 py-2 sm:px-8 sm:py-5 rounded-xl sm:rounded-2xl shadow-2xl transition-all duration-500 text-sm sm:text-lg md:text-xl flex items-center gap-2 sm:gap-3 transform hover:scale-105 hover:-translate-y-2 border-2 border-white/20 hover:border-white/40 w-full sm:w-auto min-w-[160px] sm:min-w-[180px] md:min-w-[200px] justify-center cursor-pointer"
+              className="group relative overflow-hidden backdrop-blur-2xl text-white font-bold px-4 py-2 sm:px-8 sm:py-5 rounded-xl sm:rounded-2xl shadow-2xl transition-all duration-500 text-sm sm:text-lg md:text-xl flex items-center gap-2 sm:gap-3 transform hover:scale-105 hover:-translate-y-2 border-2 border-white/20 hover:border-white/40 w-auto sm:w-auto min-w-[140px] sm:min-w-[180px] md:min-w-[200px] justify-center cursor-pointer"
               style={{ 
                 background: `linear-gradient(135deg, ${COLORS.oliveButton}DD 0%, ${COLORS.sageGreen}DD 100%)`,
                 animationDelay: `${index * 0.1}s`
