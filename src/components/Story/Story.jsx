@@ -204,11 +204,11 @@ const Story = () => {
               <div className="mt-12 pt-8 border-t border-dashed border-gray-300">
                 <div className="flex justify-center gap-8 flex-wrap">
                   <div className="transform -rotate-2 hover:rotate-0 hover:scale-110 transition-all duration-300 hover:z-10 relative">
-                    <div className="bg-white p-4 shadow-xl rounded-lg hover:shadow-2xl transition-shadow duration-300" style={{ width: '160px' }}>
+                    <div className="bg-white p-4 shadow-xl rounded-lg hover:shadow-2xl transition-shadow duration-300" style={{ width: '180px' }}>
                       <img 
                         src="/granola-process-raw.jpg" 
                         alt="Fresh raw oats spread on baking sheet"
-                        className="w-full h-28 object-cover mb-3 rounded"
+                        className="w-full h-32 object-cover mb-3 rounded"
                       />
                       <p className="text-sm text-center font-handwritten" style={{ color: COLORS.charcoal }}>
                         Fresh & Raw
@@ -216,11 +216,11 @@ const Story = () => {
                     </div>
                   </div>
                   <div className="transform rotate-1 hover:rotate-0 hover:scale-110 transition-all duration-300 hover:z-10 relative">
-                    <div className="bg-white p-4 shadow-xl rounded-lg hover:shadow-2xl transition-shadow duration-300" style={{ width: '160px' }}>
+                    <div className="bg-white p-4 shadow-xl rounded-lg hover:shadow-2xl transition-shadow duration-300" style={{ width: '180px' }}>
                       <img 
                         src="/granola-process-clusters.jpg" 
                         alt="Perfect granola clusters with nuts and seeds"
-                        className="w-full h-28 object-cover mb-3 rounded"
+                        className="w-full h-32 object-cover mb-3 rounded"
                       />
                       <p className="text-sm text-center font-handwritten" style={{ color: COLORS.charcoal }}>
                         Perfect Clusters
@@ -228,11 +228,11 @@ const Story = () => {
                     </div>
                   </div>
                   <div className="transform -rotate-1 hover:rotate-0 hover:scale-110 transition-all duration-300 hover:z-10 relative">
-                    <div className="bg-white p-4 shadow-xl rounded-lg hover:shadow-2xl transition-shadow duration-300" style={{ width: '160px' }}>
+                    <div className="bg-white p-4 shadow-xl rounded-lg hover:shadow-2xl transition-shadow duration-300" style={{ width: '180px' }}>
                       <img 
                         src="/granola-process-ready.jpg" 
                         alt="Finished granola in ceramic bowl"
-                        className="w-full h-28 object-cover mb-3 rounded"
+                        className="w-full h-32 object-cover mb-3 rounded"
                       />
                       <p className="text-sm text-center font-handwritten" style={{ color: COLORS.charcoal }}>
                         Ready to Share
