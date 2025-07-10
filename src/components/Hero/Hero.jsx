@@ -43,13 +43,13 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-transparent" />
       </div>
       
-      {/* Enhanced Logo with better mobile sizing */}
-      <div className="absolute inset-0 flex items-center justify-center z-20 px-4 pb-56 sm:pb-32 md:pb-0">
+      {/* Enhanced Logo - centered and prominent */}
+      <div className="absolute inset-0 flex items-center justify-center z-30 px-4">
         <div className="group relative">
           <img 
             src="Crunchy.svg" 
             alt="Crunchyology - Granola Elevated" 
-            className="h-56 sm:h-56 md:h-80 lg:h-96 xl:h-[48rem] 2xl:h-[56rem] w-auto max-w-full group-hover:scale-105 transition-all duration-500"
+            className="h-56 sm:h-64 md:h-80 lg:h-96 xl:h-[48rem] 2xl:h-[56rem] w-auto max-w-full group-hover:scale-105 transition-all duration-500"
             style={{
               filter: `
                 drop-shadow(0 0 4px rgba(0,0,0,0.8)) 
@@ -65,42 +65,28 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* Enhanced Navigation Buttons */}
-      <div className="absolute bottom-6 sm:bottom-8 md:bottom-16 left-1/2 -translate-x-1/2 w-full max-w-6xl px-4 z-30">
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 md:gap-6">
-          {NAV_LINKS.map((btn, index) => (
-            <a 
-              key={btn.href} 
-              href={btn.href}
-              className="group relative overflow-hidden backdrop-blur-2xl text-white font-medium px-3 py-2 sm:px-8 sm:py-5 rounded-full sm:rounded-2xl shadow-lg sm:shadow-2xl transition-all duration-500 text-sm sm:text-lg md:text-xl flex items-center gap-2 sm:gap-3 transform hover:scale-105 hover:-translate-y-2 border border-white/30 hover:border-white/50 w-auto sm:w-auto min-w-[120px] min-h-[40px] sm:min-w-[180px] md:min-w-[200px] justify-center cursor-pointer touch-manipulation"
-              style={{ 
-                background: `linear-gradient(135deg, ${COLORS.oliveButton}CC 0%, ${COLORS.sageGreen}CC 100%)`,
-                animationDelay: `${index * 0.1}s`
-              }}
-              aria-label={btn.text}
-            >
-              {/* Sliding overlay effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-white/15 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
-              
-              <span className="text-base sm:text-2xl group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 relative z-10" aria-hidden="true">
-                {btn.icon}
-              </span>
-              <span className="tracking-wide font-medium relative z-10 text-xs sm:text-lg">{btn.text}</span>
-              
-              {/* Enhanced glow effect */}
-              <div 
-                className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-30 transition-opacity duration-500 blur-xl"
-                style={{ background: `linear-gradient(135deg, ${COLORS.golden}, ${COLORS.oliveButton})` }}
-              ></div>
-            </a>
-          ))}
-        </div>
-        
-        {/* Enhanced subtitle */}
-        <div className="text-center mt-6 sm:mt-8">
-          <p className="text-white/90 text-lg sm:text-xl font-medium backdrop-blur-sm bg-black/20 px-6 py-3 rounded-full inline-block border border-white/20">
-            Handcrafted granola, elevated experience
-          </p>
+      {/* Brand tagline */}
+      <div className="absolute bottom-20 sm:bottom-24 md:bottom-28 left-1/2 -translate-x-1/2 z-20">
+        <p className="text-white/90 text-lg sm:text-xl md:text-2xl font-medium backdrop-blur-sm bg-black/20 px-8 py-4 rounded-full inline-block border border-white/20 shadow-2xl">
+          Handcrafted granola, elevated experience
+        </p>
+      </div>
+      
+      {/* Stylish scroll arrow */}
+      <div className="absolute bottom-8 sm:bottom-12 left-1/2 -translate-x-1/2 z-30 animate-bounce" aria-hidden="true">
+        <div className="group cursor-pointer">
+          <div className="bg-gradient-to-b from-white/20 to-white/10 backdrop-blur-md rounded-full p-4 border border-white/30 hover:border-white/50 transition-all duration-300 hover:scale-110 shadow-2xl group-hover:from-white/30 group-hover:to-white/20">
+            <ChevronDown className="w-8 h-8 text-white group-hover:text-white transition-colors duration-300" />
+          </div>
+          
+          {/* Subtle glow effect on hover */}
+          <div 
+            className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-30 transition-opacity duration-500 blur-xl pointer-events-none"
+            style={{ 
+              background: `radial-gradient(circle, ${COLORS.golden}, transparent)`,
+              transform: 'scale(1.5)'
+            }}
+          ></div>
         </div>
       </div>
       
