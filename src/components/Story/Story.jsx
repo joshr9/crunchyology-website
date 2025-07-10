@@ -82,16 +82,14 @@ const Story = () => {
 
                   <p className="text-xl leading-[1.8] tracking-wide">
                     I never planned on starting a business — but turns out when you 
-                    <span className="font-medium italic" style={{ color: COLORS.golden }}> bake with love</span> and hand out enough pounds of granola, 
+                    <span className="font-medium italic" style={{ color: COLORS.golden }}> bake with love</span> and hand out enough jars, 
                     people notice. Now I get to share this crispy little passion with you: 
                     <span className="font-semibold" style={{ color: COLORS.golden }}> lovingly baked, seriously tasty, and always packaged with care.</span>
                   </p>
 
                   {/* Enhanced Eco-Friendly Section */}
                   <p className="text-xl leading-[1.8] tracking-wide my-8">
-                    My fruitful search for the best home compostable bags is complete. We are packaging our delicious granola in <span className="font-semibold underline decoration-2 decoration-emerald-400">compostable bags</span>. 
-                    Sure, they look like regular plastic. But don't be fooled — these beauties 
-                    break down in your compost like banana peels 
+                    Using <span className="font-semibold underline decoration-2 decoration-emerald-400">compostable bags</span> was important to me. I wanted the packaging to reflect the same care I put into the granola itself. It took some time to find the right ones, but now every bag is packed in material that breaks down at home — just like banana peels 
                     <span className="italic font-medium" style={{ color: COLORS.golden }}> (or your willpower around the chai spiced granola)</span>. <span className="font-semibold" style={{ color: COLORS.golden }}>
                       Ohh, the magic of science!!
                     </span>
@@ -119,6 +117,7 @@ const Story = () => {
                           <div>
                             <h4 className="font-bold text-emerald-700 text-lg">Certified Compostable</h4>
                             <p className="text-sm text-emerald-600">100% biodegradable packaging</p>
+                            <p className="text-xs text-emerald-600 font-medium">Commercial or Home</p>
                           </div>
                         </div>
                         
@@ -151,10 +150,20 @@ const Story = () => {
                     <p className="text-xl leading-[1.8] tracking-wide mb-4">
                       What's the password to join?
                     </p>
-                    <p className="text-3xl font-bold tracking-tight mb-4 group-hover:scale-105 transition-transform duration-300" style={{ color: COLORS.golden }}>
+                    
+                    <a 
+                      href="#contact"
+                      className="inline-block text-3xl font-bold tracking-tight mb-4 group-hover:scale-105 transition-all duration-300 hover:scale-110 cursor-pointer transform hover:-translate-y-1 px-6 py-3 rounded-2xl hover:shadow-xl"
+                      style={{ 
+                        color: COLORS.golden,
+                        background: `linear-gradient(135deg, ${COLORS.golden}15, ${COLORS.golden}05)`,
+                        border: `2px solid ${COLORS.golden}30`
+                      }}
+                    >
                       Hit me with your best pun.
-                    </p>
-                    <p className="text-lg italic text-gray-600">
+                    </a>
+                    
+                    <p className="text-lg italic text-gray-600 mt-4">
                       (Seriously. I dare you. There may or may not be stickers involved.)
                     </p>
                   </div>

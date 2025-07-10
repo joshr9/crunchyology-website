@@ -208,10 +208,7 @@ const FindUs = () => {
                         </div>
                       </div>
                     </div>
-                    
-                    <p className="text-sm text-gray-500 mt-4 text-center font-medium">
-                      📍 Click for directions • Sundays 9AM-1PM
-                    </p>
+                  
                   </div>
                 </div>
               </div>

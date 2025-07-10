@@ -110,7 +110,7 @@ const Reviews = () => {
             <div className="relative z-10">
               <div className="text-4xl mb-4">💬</div>
               <p className="text-2xl md:text-3xl mb-4 font-bold" style={{ color: COLORS.charcoal }}>
-                Want to add your voice? <span style={{ color: COLORS.golden }}>Come find us!</span>
+                Want to have your quote featured? <span style={{ color: COLORS.golden }}>Come find us!</span>
               </p>
               <p className="text-lg" style={{ color: COLORS.charcoal + 'CC' }}>
                 Lafayette Farmers Market • Sundays 9AM-1PM
