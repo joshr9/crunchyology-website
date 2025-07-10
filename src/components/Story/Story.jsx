@@ -258,7 +258,7 @@ const Story = () => {
 
       <style jsx>{`
         .font-handwritten {
-          font-family: 'Permanent Marker', cursive;
+          font-family: 'Permanent Marker', bold;
         }
         
         /* Import premium fonts */

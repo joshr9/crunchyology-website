@@ -32,13 +32,14 @@ const Hero = () => {
         <img 
           src="blue-granola.jpg" 
           alt="Delicious Crunchyology granola bowl with fresh berries" 
-          className="w-full h-full object-cover opacity-95 transition-all duration-1000"
+          className="w-full h-full object-cover transition-all duration-1000"
           loading="eager"
           width="1920"
           height="1080"
+          style={{ filter: 'contrast(1.05) saturate(1.1)' }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/5 via-transparent to-transparent" />
       </div>
 
       {/* Centered Logo */}
