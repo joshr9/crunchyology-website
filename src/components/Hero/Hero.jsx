@@ -41,13 +41,13 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-transparent" />
       </div>
 
-      {/* Logo */}
+      {/* Centered Logo */}
       <div className="absolute inset-0 flex items-center justify-center z-30 px-4">
         <div className="group relative">
           <img 
             src="Crunchy.svg" 
             alt="Crunchyology - Granola Elevated" 
-            className="h-72 sm:h-72 md:h-96 lg:h-[32rem] xl:h-[44rem] 2xl:h-[56rem] w-auto max-w-full group-hover:scale-105 transition-all duration-500"
+            className="h-72 sm:h-80 md:h-[28rem] lg:h-[36rem] xl:h-[44rem] 2xl:h-[56rem] w-auto max-w-full group-hover:scale-105 transition-all duration-500"
             style={{
               filter: `
                 drop-shadow(0 0 4px rgba(0,0,0,0.8)) 
@@ -63,8 +63,8 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Clean Scroll Arrow */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-30 animate-bounce">
+      {/* Centered Scroll Arrow */}
+      <div className="absolute bottom-10 w-full flex justify-center z-30 animate-bounce">
         <div className="group cursor-pointer relative">
           <div className="bg-white/20 backdrop-blur-md rounded-full p-4 border border-white/30 hover:border-white/50 transition-all duration-300 hover:scale-110 shadow-2xl">
             <ChevronDown className="w-8 h-8 text-white transition-colors duration-300" />
