@@ -45,9 +45,6 @@ const FindUs = () => {
               ></div>
             </h2>
           </div>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Visit us every Sunday at Lafayette's vibrant farmers market
-          </p>
         </div>
         
         <div className="grid lg:grid-cols-3 gap-10">

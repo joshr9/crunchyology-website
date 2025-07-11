@@ -314,9 +314,6 @@ const Flavors = () => {
                 <p className="text-3xl md:text-4xl mb-6 font-bold" style={{ color: COLORS.charcoal }}>
                   Can't decide? <span style={{ color: COLORS.golden }}>Try them all!</span>
                 </p>
-                <p className="text-xl" style={{ color: COLORS.charcoal + 'CC' }}>
-                  Find us at Lafayette Farmers Market every Sunday
-                </p>
               </div>
             </div>
           </div>
