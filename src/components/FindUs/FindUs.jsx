@@ -277,21 +277,25 @@ const FindUs = () => {
             </div>
 
             {/* New: Weather card */}
-            <div 
-              className="group p-6 rounded-3xl text-center transition-all duration-500 hover:scale-105 relative overflow-hidden" 
-              style={{ 
-                background: `linear-gradient(135deg, ${COLORS.golden}20 0%, ${COLORS.cream} 100%)`,
-                border: `2px solid ${COLORS.golden}30`
-              }}
-            >
-              <div className="text-3xl mb-3 group-hover:animate-bounce">☀️</div>
-              <p className="text-sm font-medium" style={{ color: COLORS.charcoal }}>
-                Rain or shine, we're there!
-              </p>
-              <p className="text-xs text-gray-500 mt-1">
-                Check our Instagram for updates
-              </p>
-            </div>
+          <a 
+            href="https://www.instagram.com/crunchyology.co/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="block group p-6 rounded-3xl text-center transition-all duration-500 hover:scale-105 relative overflow-hidden cursor-pointer" 
+            style={{ 
+              background: `linear-gradient(135deg, ${COLORS.golden}20 0%, ${COLORS.cream} 100%)`,
+              border: `2px solid ${COLORS.golden}30`
+            }}
+            aria-label="Follow us on Instagram for weather updates"
+          >
+            <div className="text-3xl mb-3 group-hover:animate-bounce">☀️</div>
+            <p className="text-sm font-medium" style={{ color: COLORS.charcoal }}>
+              Rain or shine, we're there!
+            </p>
+            <p className="text-xs text-gray-500 mt-1 group-hover:text-gray-700 transition-colors">
+              Check our Instagram for updates
+            </p>
+          </a>
           </aside>
         </div>
       </div>

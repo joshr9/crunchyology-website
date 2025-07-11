@@ -200,7 +200,7 @@ const Story = () => {
                 </div>
               </div>
 
-              {/* Enhanced Photos section */}
+              {/* Enhanced Photos section with marker handwriting */}
               <div className="mt-12 pt-8 border-t border-dashed border-gray-300">
                 <div className="flex justify-center gap-8 flex-wrap">
                   <div className="transform -rotate-2 hover:rotate-0 hover:scale-110 transition-all duration-300 hover:z-10 relative">
@@ -208,33 +208,38 @@ const Story = () => {
                       <img 
                         src="/granola-process-raw.jpg" 
                         alt="Fresh raw oats spread on baking sheet"
-                        className="w-full h-32 object-cover mb-3 rounded"
+                        className="w-full h-40 object-cover mb-3 rounded"
+                        style={{ width: '320px' }}
                       />
-                      <p className="text-sm text-center font-handwritten" style={{ color: COLORS.charcoal }}>
+                      <p className="marker-text text-center" style={{ color: COLORS.charcoal }}>
                         The mountain of gold before the fruit is added
                       </p>
                     </div>
                   </div>
+                  
                   <div className="transform rotate-1 hover:rotate-0 hover:scale-110 transition-all duration-300 hover:z-10 relative">
                     <div className="bg-white p-4 shadow-xl rounded-lg hover:shadow-2xl transition-shadow duration-300" style={{ width: '180px' }}>
                       <img 
                         src="/granola-process-clusters.jpg" 
                         alt="Perfect granola clusters with nuts and seeds"
-                        className="w-full h-32 object-cover mb-3 rounded"
+                        className="w-full h-40 object-cover mb-3 rounded"
+                        style={{ width: '320px' }}
                       />
-                      <p className="text-sm text-center font-handwritten" style={{ color: COLORS.charcoal }}>
+                      <p className="marker-text text-center" style={{ color: COLORS.charcoal }}>
                         Perfect Clusters, for the texture lovers.
                       </p>
                     </div>
                   </div>
+                  
                   <div className="transform -rotate-1 hover:rotate-0 hover:scale-110 transition-all duration-300 hover:z-10 relative">
                     <div className="bg-white p-4 shadow-xl rounded-lg hover:shadow-2xl transition-shadow duration-300" style={{ width: '180px' }}>
                       <img 
                         src="/granola-process-ready.jpg" 
                         alt="Finished granola in ceramic bowl"
-                        className="w-full h-32 object-cover mb-3 rounded"
+                        className="w-full h-40 object-cover mb-3 rounded"
+                        style={{ width: '320px' }}
                       />
-                      <p className="text-sm text-center font-handwritten" style={{ color: COLORS.charcoal }}>
+                      <p className="marker-text text-center" style={{ color: COLORS.charcoal }}>
                         Ready to share, or hoard. Your choice.
                       </p>
                     </div>
@@ -257,12 +262,24 @@ const Story = () => {
       </div>
 
       <style jsx>{`
-        .font-handwritten {
-          font-family: 'Permanent Marker', bold;
+        /* Import just the marker font for photo captions */
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+        
+        /* Marker handwriting styles - ONLY for photo captions */
+        .marker-text {
+          font-family: 'Permanent Marker', cursive !important;
+          font-size: 14px !important;
+          font-weight: 400 !important;
+          line-height: 1.3 !important;
+          letter-spacing: 0.5px !important;
+          text-shadow: 1px 1px 0px rgba(0,0,0,0.1) !important;
+          transform: rotate(-1deg) !important;
+          transition: all 0.3s ease !important;
         }
         
-        /* Import premium fonts */
-        @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Dancing+Script:wght@400;500;700&display=swap');
+        .marker-text:hover {
+          transform: rotate(0deg) scale(1.05) !important;
+        }
         
         /* Enhanced text rendering */
         * {
